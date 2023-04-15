@@ -1,0 +1,364 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'calibri',serif;
+    color: #E9D8A6;
+
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+.container{
+    width: 100%;
+}
+
+.header{
+    background-color: #050709ff;
+    height: 90px;
+}
+
+.superpuesta{
+    margin-left: 1300px;
+    color: #725B56ff;
+    font-size: 4.5em;
+    position: absolute;
+    top: px; 
+    left: 60px;
+}
+
+.container-nav{
+    width: 100%;
+    display: block;
+}
+
+.header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+
+}
+
+.header a{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: bold;
+    color:#E9D8A6;
+    
+}
+
+.header ul{
+    padding: 5px 12px;
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color:#E9D8A6;
+}
+
+
+.header a:hover{
+    color: #725B56ff;
+}
+
+/* HERO */
+.hero{
+    background-color: #E9D8A6;
+    height: 400px;
+    position: relative;
+}
+
+.hero-content {
+    margin-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+.hero img{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.hero h1{
+    color: #E9D8A6;
+}
+
+.hero button{
+    font-size: 1.75em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #050709ff;
+    box-shadow: 2px 2px 10px #725B56ff;
+    color: #E9D8A6;
+    background-color: #050709ff; 
+    margin-top: 12px;
+}
+
+.my-button:hover{
+    color: #725B56ff;
+} 
+
+
+/* JUEGOS PRESENTADOS */
+.cards{
+    width: 100%;
+    height: 100%; 
+    box-sizing: border-box;
+    background-color: #001219;
+    margin-bottom: 0px;
+    justify-content: flex-end;
+}
+.cards::after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+.card{
+    float: left; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    background: #001219;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+} 
+
+.card {
+    position: relative;
+    z-index: 1;
+  }
+  
+.card:first-child {
+    z-index: 2;
+  }
+  .card {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card:first-child {
+    z-index: 2;
+  }
+.card:sec {
+    position: relative;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #001219;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #E9D8A6;
+    border: 1px solid #001219;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido button:hover{
+    background: #725B56ff;
+    border-color: #725B56ff;
+
+}
+
+/* CARACTERISTICAS */
+#caracteristicas .container{
+    margin-top: 500px;
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #001219;
+    color: #E9D8A6;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: #E9D8A6;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: #005F73;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+    align-items: center;
+}
+
+#hero h1{
+    font-size: 5em;
+}
+
+#somos-vapor .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#somos-vapor .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-vapor h2{
+    margin-top: 0px;
+}
+
+#somos-vapor .img-container{
+    background-image: url("./media/caballo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+.card {
+width: 30%;
+height: 300px;
+}
+
+/*CARACTERISTICAS  */
+#caracteristicas{
+    background-image: url("media/logo.png");
+    background-size: contain;
+    background-position: calc(100vw - 500px) 120px;
+}
+
+#caracteristicas .container{
+    text-align: center;
+}
+
+#caracteristicas ul{
+    font-size: 4em;
+    color: #E9D8A6;
+}
+
+/* FINAL */
+#final h2{
+    font-size: 5em;
+}
+
+#final button{
+    font-size: 2em;
+}
+
+footer .container{
+    justify-content: flex-end;
+}
+
+/* Estilos para pantallas pequeñas */
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    }
+
